@@ -18,12 +18,13 @@ import org.apache.logging.log4j.Logger;
 
 @EventBusSubscriber(modid = SpaceExplorer.MODID, bus = EventBusSubscriber.Bus.MOD)
 public final class ModEventSubscriber {
-
     private static final Logger LOGGER = LogManager.getLogger(SpaceExplorer.MODID + " Mod Event Subscriber");
+
     @SubscribeEvent
     public static void onRegisterBlocks(RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(
-                setup(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F, 3.0F)), "example_ore")
+                setup(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F, 3.0F)), "example_ore"),
+                setup(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.0F, 3.0F)), "example_block")
         );
 
         LOGGER.debug("Registered Blocks");
