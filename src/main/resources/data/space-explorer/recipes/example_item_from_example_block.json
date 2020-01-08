@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "space-explorer:example_block"
+    }
+  ],
+  "result": {
+    "item": "space-explorer:example_item",
+    "count": 9
+  }
+}

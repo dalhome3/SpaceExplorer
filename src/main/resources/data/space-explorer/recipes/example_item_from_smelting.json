@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "space-explorer:example_ore"
+  },
+  "result": "space-explorer:example_item",
+  "experience": 0.7,
+  "cookingtime": 800
+}
